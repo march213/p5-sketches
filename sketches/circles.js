@@ -1,18 +1,16 @@
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  noCursor();
+  noFill();
+  frameCount(30);
 
-  colorMode(HSB, 360, 100, 100);
-  rectMode(CENTER);
-  noStroke();
+  // Put setup code here
 }
 
 const foo = 'foo';
 
 function draw() {
-  background(mouseY / 2, 100, 100);
-  fill(360 - mouseY / 2, 100, 100);
-  rect(360, 360, mouseX + 1, mouseX + 1);
+  // Put drawings here
+  ellipse(mouseX, mouseY, 40, 40);
 }
 
 // This Redraws the Canvas when resized
